@@ -2,8 +2,7 @@
     text-align: center;
     padding: 1rem;
     height: 10vh;
-    background: linear-gradient(0deg, rgba(57, 57, 107, 1) 0%, rgba(57, 57, 125, 1) 8%, rgba(53, 92, 130, 1) 86%);
-
+    background: linear-gradient(0deg,rgba(57, 57, 107, 1) 0%, rgba(57, 57, 125, 1) 8%, rgba(53, 92, 130, 1) 86%);
     .spotifyIMG{
         object-fit: contain;
         height: 5vh;

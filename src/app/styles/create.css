@@ -6,22 +6,29 @@ h1{
     font-size: 45px;
     text-shadow: 0.3rem 0.3rem 0.5rem rgb(84, 6, 6);
 }
-.containerLogin{
+.frase{
+    margin-top: 3vh;
+    font-family: "Marcellus", serif;
+    font-size: 35px;
+    color: beige;
+    text-align: center;
+}
+.containerRegistrar{
     background-color: beige;
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    margin-top: 12vh;
+    margin-top: 5vh;
     width: 35%;
     border-radius: 0.6rem;
     padding-bottom: 5rem;
 
-        .formLogin{
+        .formRegistrar{
            display: flex;
            flex-direction: column;
-           margin-top: 3rem;
+           margin-top: 4rem;
         
-            .inputLogin{
+            .inputR{
                 text-align: center;
                 color: black;
                 padding: 0.2rem;
@@ -33,21 +40,21 @@ h1{
                 border-color: beige;
             }
             
-            .loginBTN{
+            .registrarBTN{
                 align-self: center;
                 width: 35%;
                 height: 3vh;
                 background-color: #0B6A7F;
-                color: white;
+                color: beige;
                 font-family: "Lily Script One", system-ui;
                 border-radius: 0.45rem;
             }
             
-            .Registrar{
+            .Login{
                 margin-top: 0.5rem;
                 font-family: "Lily Script One", system-ui;
 
-                .linkRegistrar{
+                .linkLogin{
                     color: rgba(130, 34, 34, 1);
                 }
             }
