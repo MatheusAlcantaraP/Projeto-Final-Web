@@ -1,4 +1,6 @@
 .rodape{
+    margin-top: 1rem;
+    padding: 1.33rem;
     text-align: center;
     background: linear-gradient(0deg, rgba(57, 57, 107, 1) 0%, rgba(57, 57, 125, 1) 8%, rgba(53, 92, 130, 1) 86%);
     color: beige;

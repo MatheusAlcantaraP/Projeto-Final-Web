@@ -1,0 +1,55 @@
+h1{
+    text-align: center;
+    margin-top: 1.5rem;
+    color: beige;
+    font-family: "Lily Script One", system-ui;
+}
+.containerLogin{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 12vh;
+ 
+    width: 35%;
+    border-radius: 0.6rem;
+    padding-bottom: 5rem;
+
+        .formLogin{
+           display: flex;
+           flex-direction: column;
+           margin-top: 3rem;
+        
+            .inputLogin{
+                text-align: center;
+                color: black;
+                padding: 0.2rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                margin-bottom: 0.5rem;
+                background-color: rgb(255, 224, 185);
+                border-radius: 0.4rem;
+                border-color: beige;
+            }
+            
+            .loginBTN{
+                align-self: center;
+                width: 35%;
+                height: 3vh;
+                background-color: #0B6A7F;
+                color: white;
+                font-family: "Lily Script One", system-ui;
+                border-radius: 0.45rem;
+            }
+            
+            .Registrar{
+                margin-top: 0.5rem;
+                font-family: "Lily Script One", system-ui;
+
+                .linkRegistrar{
+                    color: rgba(130, 34, 34, 1);
+                }
+            }
+        }
+} 
+

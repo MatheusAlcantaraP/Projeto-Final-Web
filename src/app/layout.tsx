@@ -28,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <div className="layoutDiv">
         <Header/>
-        {children}
+        <main className="layoutMain">{children}</main>
         <Footer/>
+        </div>
       </body>
     </html>
   );
