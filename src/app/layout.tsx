@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "./ui/header";
 import Footer from "./ui/footer";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <main className="layoutMain">{children}</main>
         <Footer/>
         </div>
+        <Toaster position="top-left"/>
       </body>
     </html>
   );
