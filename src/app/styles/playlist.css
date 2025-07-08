@@ -1,0 +1,112 @@
+.tituloPrincipal{
+    color: beige;
+    font-family: "Lily Script One", system-ui;;
+    
+}
+
+.containerHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btnPlaylist{
+        width: 2%;
+        height: 4vh;
+        font-weight: 500;
+        margin-top: 0.8rem;
+        border: solid 1px rgb(70, 52, 40);
+        background-color: #0B6A7F;
+        color: beige;
+        font-family: "Lily Script One", system-ui;
+        border-radius: 1.1rem;
+    }
+
+}
+
+.containerPrincipal{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .containerPlaylist{
+        display: flex;
+        flex-direction: column;
+        border: solid 1px rgb(70, 52, 40);
+        border-radius: 1.8rem;
+        background-color: beige;
+        align-items: center;
+        min-width: 40vh;
+        min-height: 25vh;
+        max-height: 25vh;
+
+        .inputs{
+            padding: 0.5rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            margin-top: 0.6rem;
+            background-color: rgb(255, 224, 185);
+            border: solid 1px rgb(70, 52, 40);
+            border-radius: 0.4rem;
+        }
+
+        .btnCriarPlaylist{
+            align-self: center;
+            width: 30%;
+            height: 3.5vh;
+            margin-top: 1.5rem;
+            border: solid 1px rgb(70, 52, 40);
+            background-color: #0B6A7F;
+            color: beige;
+            font-family: "Lily Script One", system-ui;
+            border-radius: 1.1rem;
+        }
+    }
+}
+
+.containerPlaylistCriada{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    .playlistCriadaBox{
+        display: flex;
+        background-color: beige;
+        border: 1px solid rgb(70, 52, 40);
+        border-radius: 0.4;
+        min-width: 40vh;
+        min-height: 25vh;
+        max-height: 25vh;
+        max-width: 40vh;
+        border-radius: 1.1rem;
+        margin-top: 2rem;
+        
+        .playlistImage{
+            aspect-ratio: 16/9;
+            width: 45%;
+            height: 100%;
+            border-radius: 1.1rem;
+            object-fit: cover;
+        }
+
+        .playlistInfo{
+            display: flex;
+            flex-direction: column;
+            margin-top:1rem;
+            margin-left: 0.5rem;
+            font-family: "Lily Script One", system-ui;
+
+            .playlistLinkBTN{
+                border: 1px solid rgb(70, 52, 40);
+                background-color: #0B6A7F;
+                color: beige;
+                
+                border-radius: 1.1rem;
+                width: 85%;
+                margin-top: 7rem;
+            }
+        }
+}
+}
+
+
