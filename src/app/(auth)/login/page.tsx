@@ -13,7 +13,7 @@ export interface LoginCredentials{
 
 const LoginFormatoZod = z.object({
     email: z.string().trim().email('Email com formato incorreto'),
-    password: z.string({message: 'Senha incorreta'}).trim().min(6, {message: 'Senha requer no mínimo 6 caracteres'})
+    senha: z.string({message: 'Senha incorreta'}).trim().min(6, {message: 'Senha requer no mínimo 6 caracteres'})
 })
 
 export default function PaginaLogin(){
@@ -42,17 +42,17 @@ export default function PaginaLogin(){
 
         const LoginResult = await validateCredentials(loginData)
 
-        //if(LoginResult.success)
-        //{
-        //    toast.success(LoginResult.success);
-        //    return;
-        // }
-
+        if(LoginResult.error)
+        {
+            toast.error(LoginResult.error);
+            return;
+        }
     }
 
     return(
         <div >
             <h1>Bem vindo ao seu aplicativo de música!</h1>
+            <p className="frase">Faça seu login!</p>
             <div className="containerLogin">
                 <form className="formLogin" action={loginfunction}>
                     <input className="inputLogin" name="email" id="email" type="text" placeholder="Email"/>

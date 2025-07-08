@@ -11,11 +11,11 @@ import {redirect} from "next/navigation";
 
 const CriarUsuarioFormatoZod = z.object({
     email: z.string().trim().email('Email com formato incorreto'),
-    password: z.string({message: 'Insira uma senha'}).trim().min(4, {message: 'Senha precisa no mínimo 4 caracteres'}),
-    confPassword: z.string({message: 'Insira uma confirmação de senha'}).trim().min(1, {message: 'Confirmar Senha não pode ser vazia'}),
-}).refine((data) => data.password === data.confPassword, {
+    senha: z.string({message: 'Insira uma senha'}).trim().min(6, {message: 'Senha precisa no mínimo 6 caracteres'}),
+    confirmaSenha: z.string({message: 'Insira uma confirmação de senha'}).trim().min(1, {message: 'Confirmar Senha não pode ser vazia'}),
+}).refine((data) => data.senha === data.confirmaSenha, {
     message: "Senhas não conferem",
-    path: ["confPassword"]
+    path: ["confirmaSenha"]
 });
 
 
@@ -26,7 +26,7 @@ export default function PaginaRegistrar(){
         const registerData = {
             email: formData.get('email') as string,
             senha: formData.get('senha') as string, 
-            confereSenha: formData.get('confirmaSenha') as string
+            confirmaSenha: formData.get('confirmaSenha') as string
         }
 
         const validacaoZod = CriarUsuarioFormatoZod.safeParse(registerData);
@@ -46,15 +46,15 @@ export default function PaginaRegistrar(){
 
         const CreateUserResult = await createUser(registerData as LoginCredentials);
 
-        //if(CreateUserResult.error)
-        //{
-        //    toast.error(CreateUserResult.error);
-        //}
-        //else if(CreateUserResult.success)
-        //{
-        //    toast.success(CreateUserResult.success);
-        //    redirect('/login');
-        //}
+        if(CreateUserResult.error)
+        {
+            toast.error(CreateUserResult.error);
+        }
+        else if(CreateUserResult.success)
+        {
+            toast.success(CreateUserResult.success);
+            redirect('/login');
+        }
     }
 
     return(

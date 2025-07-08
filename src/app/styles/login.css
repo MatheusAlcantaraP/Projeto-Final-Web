@@ -6,16 +6,26 @@ h1{
     font-size: 45px;
     text-shadow: 0.3rem 0.3rem 0.5rem rgb(84, 6, 6);
 }
+.frase{
+    margin-top: 3vh;
+    font-family: "Marcellus", serif;
+    font-size: 35px;
+    color: beige;
+    text-align: center;
+}
 .containerLogin{
     background-color: beige;
     border: solid 1px rgb(70, 52, 40);
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
-    margin-top: 12vh;
+    margin-top: 5vh;
     width: 35%;
     border-radius: 1.8rem;
     padding-bottom: 5rem;
+    min-height: 40vh;
+    max-height: 40vh;
 
         .formLogin{
            display: flex;
@@ -38,10 +48,10 @@ h1{
                 align-self: center;
                 width: 30%;
                 height: 4vh;
-                margin-top: 2rem;
+                margin-top: 5rem;
                 border: solid 1px rgb(70, 52, 40);
                 background-color: #0B6A7F;
-                color: white;
+                color: beige;
                 font-family: "Lily Script One", system-ui;
                 border-radius: 1.1rem;
             }
