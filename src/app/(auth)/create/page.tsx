@@ -7,7 +7,9 @@ import toast from 'react-hot-toast'
 import {createUser} from '@/app/libs/credentials';
 import {LoginCredentials} from "../login/page"
 import {redirect} from "next/navigation";
-
+import disco from "public/disco.gif"
+import userlogin from "public/user-login.gif"
+import Image from "next/image"
 
 const CriarUsuarioFormatoZod = z.object({
     email: z.string().trim().email('Email com formato incorreto'),
@@ -59,10 +61,13 @@ export default function PaginaRegistrar(){
 
     return(
         <main>
-            <h1>Bem vindo ao seu aplicativo de música!</h1>
-            <p className="frase">Crie sua conta agora!</p>
+            <div>
+                <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Giga:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"></link>
+                <h1>Bem vindo ao seu aplicativo de música!</h1>
+            </div>
             <div className="containerRegistrar">
                 <form className="formRegistrar" action={createFunction}>
+                    <Image className='userIMG'src={userlogin} alt=""/>
                     <input className="inputR" name="email" id="email" type="text" placeholder="Email"/>
                     <label htmlFor="email"></label>
                     <input className="inputR" name="senha" id="senha" type="password" placeholder="Senha"/>
@@ -70,8 +75,18 @@ export default function PaginaRegistrar(){
                     <input className="inputR" name="confirmaSenha" id="confirmaSenha" type="password" placeholder="Confirmar Senha"/>
                     <label htmlFor="senha"></label>
                     <button className="registrarBTN">Cadastrar</button>
-                    <p className="Login">Já possui uma conta? <Link className="linkLogin" href="/login">Clique aqui</Link></p>
+                    <p className="Login">Já possui uma conta? <Link className="linkLogin" href="/login">Clique aqui</Link> para fazer login!</p>
                 </form>
+                <div className="texto">
+                    <h2 className="frase">Faça<br />
+                    seu<br />
+                    Cadastro!</h2>
+                    <p>Crie sua conta, faça suas playlists, fuiewodji wqdqwd diuqwoi pwq  qdwdwq rfw dqw qwq </p>
+                </div>
+
+            </div>
+            <div>
+                <Image className='discoIMG'src={disco} alt=""/>
             </div>
         </main>
     )

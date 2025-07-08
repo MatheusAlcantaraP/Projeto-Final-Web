@@ -44,7 +44,7 @@ export default function PaginaPlaylist() {
            <div className="playlistInfo"> 
                 <h3 className="playlistTitulo">{pl.nome}</h3>
                 <p className="playlistEstilo">Estilo: {pl.estilo || "Não definido"}</p>
-                <button className="playlistLinkBTN">Clique para adicionar suas músicas</button>
+                <button className="playlistLinkBTN">Adicionar Músicas</button>
             </div>
         </div>
         ))}
