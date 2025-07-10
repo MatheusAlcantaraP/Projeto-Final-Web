@@ -1,6 +1,7 @@
 import "@/app/styles/playlist.css";
 import { createPlaylist } from "../libs/credentials";
 import { redirect } from "next/navigation";
+import Link from 'next/link';
 
 export interface PlaylistCredentials{
     nomePl: string,
@@ -32,8 +33,10 @@ export default function PaginaPlaylist() {
   return (
     <div>
       <div className="containerHeader">
-        <h1 className="tituloPrincipal">Página para criar as suas Playlists!</h1>
-        <button className="btnPlaylist" aria-label="Adicionar playlist">&#10010;</button>
+        <h1 className="tituloPrincipal">Crie suas Playlists!</h1>
+        <Link href={`/dashboard/playlists`}>
+                <button className="btnPlaylist" aria-label="Adicionar playlist">Já possui uma playlist? Clique para vê-la!</button>
+        </Link>
       </div>
 
       <div className="containerPrincipal"> 

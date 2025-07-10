@@ -1,6 +1,6 @@
 .tituloPrincipal{
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
     color: #272727;
     text-shadow: 0.2rem 0.2rem 0.4rem rgb(211, 198, 241);
     font-size: 36px;
@@ -16,10 +16,11 @@
     align-items: center;
 
     .btnPlaylist{
-        width: 2%;
         height: 4vh;
         font-weight: 500;
         margin-top: 0.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         border: solid 1px  #61526b;;
         background-color: #a45ed3;;
         color: #fff9f9;
@@ -39,6 +40,8 @@
         flex-direction: column;
         border-radius: 1.8rem;
         background: linear-gradient(47deg,rgba(160, 108, 189, 1) 38%, rgba(255, 111, 92, 1) 73%, rgba(237, 158, 47, 1) 98%);
+        border: 2px solid #a45ed3;
+        box-shadow: 0.5rem 0.5rem 1rem #272727;
         align-items: center;
         min-width: 40vh;
         min-height: 25vh;
@@ -50,7 +53,7 @@
             padding-right: 4rem;
             margin-top: 1.6rem;
             background: #fff9f9;
-            border: solid 1px rgb(255, 171, 116);
+            border: 1px solid black;
             color: black;
             border-radius: 0.4rem;
         }
@@ -59,7 +62,7 @@
             align-self: center;
             width: 30%;
             height: 3.5vh;
-            margin-top: 1.5rem;
+            margin-top: 0.8rem;
             border: solid 1px #a45ed3;
             background: linear-gradient(86deg,rgba(255, 249, 249, 1) 0%, rgba(219, 175, 222, 1) 100%);
             color: #272727;

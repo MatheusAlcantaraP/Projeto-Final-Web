@@ -49,9 +49,14 @@ export async function validateCredentials(data: LoginCredentials){
 
     const usuario = usuariosDB.find((u) => u.email === email);
 
+    if(!usuario)
+    {
+        return {error:'Usuário ou senha inválido!'};
+    }  
+    
     const verificaSenha = await bcrypt.compare(senha, usuario.senha);
-
-    if(!usuario ||!verificaSenha)
+  
+    if(!verificaSenha)
     {
         return {error:'Usuário ou senha inválido!'};
     }

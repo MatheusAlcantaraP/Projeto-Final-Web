@@ -1,4 +1,3 @@
-
 import "@/app/styles/playlistMusicas.css";
 import Link from 'next/link';
 import dbConexao from "@/app/libs/db-conexao";
@@ -17,12 +16,14 @@ export default async function ListaPlaylists() {
         const playlists = todasPlaylists.filter((p) => p.userEmail === userEmail);
         
         return (
-        <div>
-            <Link href={`/dashboard/`}>
-                <button>Criar Playlist</button>
-            </Link>
+        <div className="pagina">
+            <h2 className="titulo">Suas Playlists</h2>
+            <div>
+                <Link href={`/dashboard/`}>
+                    <button className="CriarPlaylistBTN">Criar outras Playlist</button>
+                </Link>
+            </div>
             <div className="containerPlaylistCriada">
-                <h2>Suas Playlists</h2>
                 {playlists.map((p) => (
                     <div key={p.id} className="playlistCriadaBox">
                     <img src={p.url || "https://via.placeholder.com/150"} alt={p.nome} className="playlistImage" />
@@ -39,5 +40,4 @@ export default async function ListaPlaylists() {
         </div>   
         )
     }
-
 }
