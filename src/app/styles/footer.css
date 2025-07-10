@@ -1,8 +1,6 @@
 .rodape{
     margin-top: 1rem;
-    padding: 1rem;
-    text-align: center;
+    padding: 2rem;
     background: linear-gradient(45deg,rgba(160, 108, 189, 1) 20%, rgba(255, 111, 92, 1) 50%, rgba(237, 158, 47, 1) 80%);
-    color: beige;
-    font-family: "Lily Script One", system-ui;
+
 }

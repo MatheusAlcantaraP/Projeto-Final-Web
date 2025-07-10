@@ -49,12 +49,18 @@ export async function validateCredentials(data: LoginCredentials){
 
     const usuario = usuariosDB.find((u) => u.email === email);
 
-    const verificaSenha = await bcrypt.compare(senha, usuario.senha);
-
-    if(!usuario ||!verificaSenha)
+    if(!usuario)
     {
         return {error:'Usuário ou senha inválido!'};
     }
+    
+    const verificaSenha = await bcrypt.compare(senha, usuario.senha);
+
+    if(!verificaSenha)
+    {
+        return {error:'Usuário ou senha inválido!'};
+    }
+
     else{
         await createSessionToken(usuario.id, usuario.email);
         return {success: 'Login realizado com sucesso!', email: usuario.email };
@@ -73,6 +79,7 @@ export async function createPlaylist(data: PlaylistCredentials)
         nome: data.nomePl,
         url: data.imgURL,
         estilo: data.estiloPl,
+        descricao: data.descricaoPL,
         userEmail: session.userEmail
     }
 

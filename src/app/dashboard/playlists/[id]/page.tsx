@@ -1,6 +1,7 @@
 import dbConexao from "@/app/libs/db-conexao";
-import "@/app/styles/playlistMusicas.css";
+import "@/app/styles/playlistShow.css";
 import { redirect } from "next/navigation";
+import Link from 'next/link';
 
 const arquivo = 'db-playlist.json';
 
@@ -10,6 +11,7 @@ interface PlaylistProps {
   url: string;
   estilo: string;
   email: string;
+  descricao: string;
 }
 
 interface EditPlaylistProps {
@@ -18,47 +20,30 @@ interface EditPlaylistProps {
 
 export default async function EditPlaylist({ params }: EditPlaylistProps) {
 
-  const { id } = params;
+  const { id } = await params;
   const playlists = await dbConexao.retornaDB(arquivo);
   const playlistToEdit: PlaylistProps = playlists.find((p: PlaylistProps) => p.id === id);
 
   return (
-    <div className="containerPlaylistCriada">
-      <h2>Editar Playlist</h2>
-      <form className="playlistCriadaBox">
-        <img
-          src={playlistToEdit.url || "https://via.placeholder.com/150"}
-          alt="Capa"
-          className="playlistImage"
-        />
-        <div className="playlistInfo">
-          <input
-            type="text"
-            id="nome"
-            name="nome"
-            placeholder="Nome da Playlist"
-            defaultValue={playlistToEdit.nome}
-            className="inputs"
-          />
-          <input
-            type="text"
-            id="url"
-            name="url"
-            placeholder="URL da Imagem"
-            defaultValue={playlistToEdit.url}
-            className="inputs"
-          />
-          <input
-            type="text"
-            id="estilo"
-            name="estilo"
-            placeholder="Estilo Musical"
-            defaultValue={playlistToEdit.estilo}
-            className="inputs"
-          />
-          <button type="submit" className="playlistLinkBTN">Atualizar</button>
+
+    <div className="paginaMusica">
+        <Link href={`/dashboard/playlists`}>
+          <button className="BTNMusica">Ver Playlists</button>
+        </Link>
+        <div className="containerPlaylistCriada">
+          <div className="containerInfos">
+            <img
+              src={playlistToEdit.url || "https://via.placeholder.com/150"}
+              alt="Capa"
+              className="playlistImage"
+            />
+            <div className="playlistInfo">
+              <p className="playlistNome">{playlistToEdit.nome}</p>
+              <p className="playlistEstilo">{playlistToEdit.estilo}</p>
+              <p className="playlistDescricao">{playlistToEdit.descricao}</p>
+            </div>
+          </div>
         </div>
-      </form>
     </div>
   );
 }

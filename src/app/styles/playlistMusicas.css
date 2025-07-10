@@ -1,48 +1,128 @@
-.containerPlaylistCriada{
+.titulo{
+    text-align: center;
+    margin-top: 2rem;
+    color: #272727;
+    text-shadow: 0.2rem 0.2rem 0.4rem rgb(211, 198, 241);
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 45px;
+}
+
+.pagina{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    
-    .playlistCriadaBox{
-        border: 2px solid #a45ed3;
+    align-items: center;
+
+    .CriarPlaylistBTN{
+        align-self: center;
+        height: 4vh;
+        font-weight: 500;
+        margin-top: 0.8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: solid 1px  #61526b;;
+        background-color: #a45ed3;;
+        color: #fff9f9;
+        font-family: "Lily Script One", system-ui;
+        border-radius: 1.1rem;
+    }
+
+    .containerPlaylistCriada{
         display: flex;
-        background: linear-gradient(47deg,rgba(160, 108, 189, 1) 38%, rgba(255, 111, 92, 1) 73%, rgba(237, 158, 47, 1) 98%);
-        border-radius: 0.4;
-        min-width: 40vh;
-        min-height: 25vh;
-        max-height: 25vh;
-        max-width: 40vh;
-        border-radius: 0.5rem;
-        margin-top: 2rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
         
-        .playlistImage{
-            aspect-ratio: 16/9;
-            width: 45%;
-            height: 100%;
-            border-radius: 0.5rem;
-            object-fit: cover;
-        }
-
-        .playlistInfo{
+        .CriarPlaylistBTN{
+            height: 4vh;
+            font-weight: 500;
+            margin-top: 0.8rem;
+            border: solid 1px  #61526b;;
+            background-color: #a45ed3;;
             color: #fff9f9;
-            text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
-            display: flex;
-            flex-direction: column;
-            margin-top:1rem;
-            margin-left: 0.5rem;
             font-family: "Lily Script One", system-ui;
-
-            .playlistLinkBTN{
-                padding: 0.5vh;
-                border: 1px solid #ffffff;
-                background: linear-gradient(86deg,rgba(255, 249, 249, 1) 0%, rgba(219, 175, 222, 1) 100%);
-                color: #272727;
-                align-self: center;
-                border-radius: 0.5rem;
-                width: 85%;
-                margin-top: 7rem;
-            }
+            border-radius: 1.1rem;
         }
-}
-}
+        .playlistCriadaBox{
+            border: 2px solid #a45ed3;
+            box-shadow: 0.5rem 0.5rem 1rem #272727;
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(47deg,rgba(160, 108, 189, 1) 38%, rgba(255, 111, 92, 1) 73%, rgba(237, 158, 47, 1) 98%);
+            border-radius: 0.4;
+            min-width: 40vh;
+            min-height: 25vh;
+            max-height: 25vh;
+            max-width: 40vh;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            
+            .playlistImage{
+                width: 50%;
+                border-radius: 0.5rem;
+
+                object-fit: cover;
+            }
+
+            .playlistInfo{
+                color: #fff9f9;
+                text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+                margin-left: 0.5rem;
+                font-family: "Lily Script One", system-ui;
+
+                .deleteBTN{
+                    align-self: flex-end;
+                    margin-right: 0.5rem;
+                    margin-top: 0;
+                    border-radius: 1rem;
+                    width: 12%;
+                    color: rgb(13, 9, 15);
+                    font-weight: 800;
+                    font-size: 10px;
+                    background-color: #b476b9;
+                    border-color: rgba(32, 26, 43, 0.322);
+                    box-shadow:  0.2rem 0.2rem 0.3rem rgba(47, 39, 92, 0.116);
+                }
+                .playlistTitulo{
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+
+                .playlistEstilo{
+                    font-size: 15px;
+                    font-weight: 600;
+                    text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                }
+
+                .playlistDescricao{
+                    font-weight: 500;
+                    text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                    margin-top: 1rem;
+                }
+
+                .playlistLinkBTN{
+                    display: flex;
+                    justify-self: center;
+                    padding-top: 0.15rem;
+                    border: 1px solid #ffffff;
+                    background: linear-gradient(86deg,rgba(255, 249, 249, 1) 0%, rgba(219, 175, 222, 1) 100%);
+                    color: #272727;
+                    font-weight: 500;
+                    text-shadow: 0.1rem 0.1rem 0.2rem rgba(110, 103, 145, 0.705);
+                    border-radius: 0.5rem;
+                    margin-top: 3rem;
+                    width: 85%;
+                }
+            }
+    }
+    }
+
+    }
