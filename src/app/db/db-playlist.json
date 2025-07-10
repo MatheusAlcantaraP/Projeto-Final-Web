@@ -1,0 +1,23 @@
+[
+  {
+    "id": "6f860d8f-d958-48ca-b672-1a7d3888d229",
+    "nome": "laura",
+    "url": "https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FPyke_34.jpg&w=1200&q=75",
+    "estilo": "rock",
+    "userEmail": "laurateste2@outlook.com"
+  },
+  {
+    "id": "395227d8-53d2-4cfa-9b21-8e563f96c09e",
+    "nome": "laura2",
+    "url": "https://www.lolvvv.com/_next/image?url=https%3A%2F%2Fddragon.leagueoflegends.com%2Fcdn%2Fimg%2Fchampion%2Fsplash%2FPyke_16.jpg&w=1200&q=75",
+    "estilo": "indie",
+    "userEmail": "laurateste2@outlook.com"
+  },
+  {
+    "id": "a3dbf330-2723-478d-bf31-421731e8289c",
+    "nome": "laura3",
+    "url": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_64.jpg",
+    "estilo": "funk",
+    "userEmail": "laurateste2@outlook.com"
+  }
+]

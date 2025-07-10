@@ -2,10 +2,15 @@
 
 import {redirect} from "next/navigation";
 import {LoginCredentials} from "../(auth)/login/page";
+import {PlaylistCredentials} from "../dashboard/page"
+import { createSessionToken } from "./session";
+import { isSessionValid } from "./session";
 import bcrypt from 'bcrypt';
 import dbConexao from "./db-conexao";
 
+
 const dbUsuarioPath = 'db-usuario.json'
+const dbPlaylistPath = 'db-playlist.json'
 
 export async function createUser(data: LoginCredentials){
 
@@ -15,6 +20,7 @@ export async function createUser(data: LoginCredentials){
     const senhacrypt = await bcrypt.hash(senha, 10);
 
     const NovoUsuario = {
+        id: crypto.randomUUID(),
         email,
         senha: senhacrypt 
     }
@@ -50,7 +56,29 @@ export async function validateCredentials(data: LoginCredentials){
         return {error:'Usuário ou senha inválido!'};
     }
     else{
-        redirect('/dashboard');
+        await createSessionToken(usuario.id, usuario.email);
+        return {success: 'Login realizado com sucesso!', email: usuario.email };
     }
 
+}
+
+export async function createPlaylist(data: PlaylistCredentials)
+{
+    const session = await isSessionValid();
+    if (!session) return { error: "Usuário não autenticado" };
+
+
+    const NovaPlaylist = {
+        id: crypto.randomUUID(),
+        nome: data.nomePl,
+        url: data.imgURL,
+        estilo: data.estiloPl,
+        userEmail: session.userEmail
+    }
+
+    const playlistDB = await dbConexao.retornaDB(dbPlaylistPath)
+    playlistDB.push(NovaPlaylist)
+    dbConexao.armazenaDB(dbPlaylistPath, playlistDB)
+
+    return {success:'Playlist criada com sucesso!', id: NovaPlaylist.id}
 }

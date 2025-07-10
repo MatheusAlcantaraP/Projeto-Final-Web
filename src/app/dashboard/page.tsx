@@ -1,54 +1,50 @@
-'use client';
-
-import { useState } from "react";
 import "@/app/styles/playlist.css";
+import { createPlaylist } from "../libs/credentials";
+import { redirect } from "next/navigation";
+
+export interface PlaylistCredentials{
+    nomePl: string,
+    imgURL: string,
+    estiloPl: string,
+}
 
 export default function PaginaPlaylist() {
-  const [showForm, setShowForm] = useState(false);
-  const [playlists, setPlaylists] = useState<{ nome: string; imagem: string; estilo: string }[]>([]);
-  const [formData, setFormData] = useState({ nome: "", imagem: "", estilo: "" });
 
-  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  }
+  const playlistfunction = async (formData: FormData) => {
+    'use server'
+    
+    const playlistData: PlaylistCredentials = {
+      nomePl: formData.get('nomePlaylist') as string,
+      imgURL: formData.get('urlPlaylist') as string, 
+      estiloPl: formData.get('estiloPlaylist') as string,
 
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setPlaylists([...playlists, formData]);
-    setFormData({ nome: "", imagem: "", estilo: "" });
-    setShowForm(false);
+    }
+
+    const CreatePlaylistResult = await createPlaylist(playlistData);
+  
+    if(CreatePlaylistResult.success)
+    {
+      redirect(`/dashboard/playlists/`);
+    }
+
   }
 
   return (
     <div>
       <div className="containerHeader">
         <h1 className="tituloPrincipal">Página para criar as suas Playlists!</h1>
-        <button className="btnPlaylist" onClick={() => setShowForm(true)} aria-label="Adicionar playlist">&#10010;</button>
+        <button className="btnPlaylist" aria-label="Adicionar playlist">&#10010;</button>
       </div>
 
-      {showForm && (
-        <div className="containerPrincipal" onSubmit={handleSubmit}> 
-            <form className="containerPlaylist">
-                <input name="nome" className="inputs" placeholder="Nome da Playlist" value={formData.nome} onChange={handleChange} required />
-                <input name="imagem" className="inputs" placeholder="URL da Imagem" value={formData.imagem} onChange={handleChange} />
-                <input name="estilo" className="inputs" placeholder="Estilo Musical" value={formData.estilo} onChange={handleChange} />
-                <button type="submit" className="btnCriarPlaylist">Criar Playlist</button>
-            </form>
-        </div>
-      )}
-
-      <div className="containerPlaylistCriada">
-        {playlists.map((pl, i) => (
-        <div key={i} className="playlistCriadaBox">
-           <img src={pl.imagem || "https://via.placeholder.com/150"} alt={pl.nome} className="playlistImage" />
-           <div className="playlistInfo"> 
-                <h3 className="playlistTitulo">{pl.nome}</h3>
-                <p className="playlistEstilo">Estilo: {pl.estilo || "Não definido"}</p>
-                <button className="playlistLinkBTN">Adicionar Músicas</button>
-            </div>
-        </div>
-        ))}
+      <div className="containerPrincipal"> 
+          <form className="containerPlaylist" action={playlistfunction}>
+              <input name="nomePlaylist"  id='nomePlaylist' className="inputs" placeholder="Nome da Playlist" required />
+              <input name="urlPlaylist"  id='urlPlaylist'className="inputs" placeholder="URL da Imagem" />
+              <input name="estiloPlaylist"  id='estiloPlaylist' className="inputs" placeholder="Estilo Musical"/>
+              <button type="submit" className="btnCriarPlaylist">Criar Playlist</button>
+          </form>
       </div>
+
     </div>
   );
 }

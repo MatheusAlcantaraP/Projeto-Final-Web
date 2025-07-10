@@ -1,0 +1,48 @@
+.containerPlaylistCriada{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    
+    .playlistCriadaBox{
+        border: 2px solid #a45ed3;
+        display: flex;
+        background: linear-gradient(47deg,rgba(160, 108, 189, 1) 38%, rgba(255, 111, 92, 1) 73%, rgba(237, 158, 47, 1) 98%);
+        border-radius: 0.4;
+        min-width: 40vh;
+        min-height: 25vh;
+        max-height: 25vh;
+        max-width: 40vh;
+        border-radius: 0.5rem;
+        margin-top: 2rem;
+        
+        .playlistImage{
+            aspect-ratio: 16/9;
+            width: 45%;
+            height: 100%;
+            border-radius: 0.5rem;
+            object-fit: cover;
+        }
+
+        .playlistInfo{
+            color: #fff9f9;
+            text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+            display: flex;
+            flex-direction: column;
+            margin-top:1rem;
+            margin-left: 0.5rem;
+            font-family: "Lily Script One", system-ui;
+
+            .playlistLinkBTN{
+                padding: 0.5vh;
+                border: 1px solid #ffffff;
+                background: linear-gradient(86deg,rgba(255, 249, 249, 1) 0%, rgba(219, 175, 222, 1) 100%);
+                color: #272727;
+                align-self: center;
+                border-radius: 0.5rem;
+                width: 85%;
+                margin-top: 7rem;
+            }
+        }
+}
+}

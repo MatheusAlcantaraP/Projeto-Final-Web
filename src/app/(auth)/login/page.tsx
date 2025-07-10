@@ -8,6 +8,7 @@ import { validateCredentials } from '@/app/libs/credentials';
 import Image from "next/image";
 import disco from "public/disco.gif"
 import userlogin from "public/user-login.gif"
+import { redirect } from "next/navigation";
 
 export interface LoginCredentials{
     email: string,
@@ -50,6 +51,12 @@ export default function PaginaLogin(){
             toast.error(LoginResult.error);
             return;
         }
+        else if(LoginResult.success)
+        {
+            toast.success(LoginResult.success);
+            redirect('/dashboard');
+        }
+        
     }
 
     return(

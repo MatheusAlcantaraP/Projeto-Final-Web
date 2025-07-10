@@ -1,24 +1,43 @@
-'use client';
 
-import { useState } from 'react';
+import "@/app/styles/playlistMusicas.css";
+import Link from 'next/link';
+import dbConexao from "@/app/libs/db-conexao";
+import { isSessionValid } from "@/app/libs/session";
+import { redirect } from "next/navigation";
 
-//Função incompleta de onde será realizada a página de integração com a API
+const dbPlaylistPath = "db-playlist.json";
 
-export default function Dashboard() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [songs, setSongs] = useState([]);
+export default async function ListaPlaylists() {
+    
+    const session = await isSessionValid();
+    if (session) {
+        console.log(session.userEmail); 
+        const userEmail = session.userEmail
+        const todasPlaylists = await dbConexao.retornaDB(dbPlaylistPath);
+        const playlists = todasPlaylists.filter((p) => p.userEmail === userEmail);
+        
+        return (
+        <div>
+            <Link href={`/dashboard/`}>
+                <button>Criar Playlist</button>
+            </Link>
+            <div className="containerPlaylistCriada">
+                <h2>Suas Playlists</h2>
+                {playlists.map((p) => (
+                    <div key={p.id} className="playlistCriadaBox">
+                    <img src={p.url || "https://via.placeholder.com/150"} alt={p.nome} className="playlistImage" />
+                    <div className="playlistInfo">
+                        <h3 className="playlistTitulo">{p.nome}</h3>
+                        <p className="playlistEstilo">Estilo: {p.estilo}</p>
+                        <Link href={`/dashboard/playlists/${p.id}`}>
+                        <button className="playlistLinkBTN">Editar / Adicionar Músicas</button>
+                        </Link>
+                    </div>
+                    </div>
+                ))}
+            </div> 
+        </div>   
+        )
+    }
 
-  const handleSearch = async () => {
-    if (!searchTerm.trim()) return;
-
-    const response = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(searchTerm)}&limit=10`);
-    const data = await response.json();
-    setSongs(data.results);
-  };
-
-  return (
-    <div>
-
-    </div>
-  );
 }
