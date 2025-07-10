@@ -42,9 +42,16 @@ export default async function EditPlaylist({ params }: EditPlaylistProps) {
                 <p className="playlistEstilo">{playlistToEdit.estilo}</p>
                 <p className="playlistDescricao">{playlistToEdit.descricao}</p>
               </div>
+              </div>
+              <div className="containerMeio">
+                <div className="BTNpl">
+                  <a className="BTNbusca">Buscar Musica</a>
+                  <a className="BTNmostrar">Ver Playlist</a>
+                  <a className="BTNedit">Editar Playlist</a>
+                </div>
                 <div>
-                <EditPlaylistClient playlistId={playlistToEdit.id} />
-                <button type="submit" className="playlistLinkBTN">Atualizar</button>
+                  <EditPlaylistClient playlistId={playlistToEdit.id} />
+                  
                 </div>
               </div>
           </div>

@@ -1,4 +1,5 @@
-'use client';
+
+import "@/app/styles/api-busca.css";
 
 import { useState } from "react";
 
@@ -30,29 +31,30 @@ export default function BuscaMusicas() {
   };
 
   return (
-    <div>
-      <input
-        type="search"
-        value={pesquisa}
-        onChange={(e) => setPesquisa(e.target.value)}
-      />
-      <button onClick={buscar}>Buscar</button>
-
-      <ul>
-        {musicas.map((m) => (
-            <li key={m.previewUrl} style={{ marginBottom: "1rem" }}>
-            <img src={m.artworkUrl100} alt={m.trackName} />
-            <div>
-                <p>{m.trackName} - {m.artistName}</p>
-                <p>{m.collectionName}</p>
-                <div>
-                <audio controls src={m.previewUrl} />
-                </div>
-                { <button/* onClick={() => adicionarMusica(m)}*/>Adicionar à playlist</button>}
-            </div>
-            </li>
-        ))}
-        </ul>
+    <div className="apibox">
+      <div className="buscaBOX">
+        <input className="buscaMSC" type="search" placeholder="O que você quer ouvir?" value={pesquisa} onChange={(e) => setPesquisa(e.target.value)}/>
+        <button className="btnBusca" onClick={buscar}>🔍</button>
+      </div>
+      <div className="musicasBOX">
+        <ul>
+          {musicas.map((m) => (
+              <li key={m.previewUrl} style={{ marginBottom: "1rem" }}>
+              <img src={m.artworkUrl100} alt={m.trackName} />
+              <div className="infoMSC">
+                  <p className="nomeMusica">{m.trackName} - {m.artistName}</p>
+                  <p className="albumMusica">{m.collectionName}</p>
+                  <div className="previewBOX">
+                    <audio controls src={m.previewUrl} />
+                  </div>
+              </div>
+              <div className="addBTNbox">
+                  {<button className="addMusicBTN"/* onClick={() => adicionarMusica(m)}*/>+</button>}
+              </div>
+              </li>
+          ))}
+          </ul>
+        </div>
     </div>
   );
 }

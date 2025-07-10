@@ -6,7 +6,7 @@
     min-height: 100vh;
     box-sizing: border-box;
 
-    .BTNMusica {
+    .BTNmusica {
         margin-bottom: 1rem;
         height: 4vh;
         font-weight: 500;
@@ -14,16 +14,18 @@
         border: solid 1px  #61526b;;
         background-color: #a45ed3;;
         color: #fff9f9;
-        font-family: "Lily Script One", system-ui;
         border-radius: 1.1rem;
+        font-family: "Lily Script One", system-ui;
     }
 
     .containerPlaylistCriada {
+        display: flex;
+        flex-direction: row;
         width: 90%;
         height: 75vh;
         border-radius: 1rem;
         box-shadow: 0.5rem 0.5rem 1rem #272727;
-        background: linear-gradient(47deg,rgba(97, 80, 148, 0.91) 36%, rgba(189, 95, 83, 0.91) 66%, rgba(140, 64, 20, 0.87) 98%);
+        background: linear-gradient(47deg,rgba(82, 72, 117, 0.91) 36%, rgba(143, 61, 50, 0.91) 66%, rgba(173, 99, 56, 0.87) 98%);
 
         .containerInfos {
             display: flex;
@@ -31,11 +33,10 @@
             min-height: 75vh;
             width: 26%;
             border-right: 1px solid #fff9f9;
-            
             border-top-left-radius: 1rem;
             border-bottom-left-radius: 1rem;
             background: linear-gradient(47deg,rgba(140, 112, 181, 0.91) 31%, rgba(204, 72, 55, 0.91) 66%, rgba(247, 148, 27, 0.87) 98%);
-
+            
             .playlistImage {
                 display: flex;
                 justify-content: center;
@@ -79,5 +80,45 @@
                 }
             }
         }
+
+            .containerMeio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                
+                .BTNpl{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3rem;
+                    
+                    .BTNbusca{
+                        color:#fff9f9;
+                        text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                        font-weight: 700;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        font-size: 22px;
+                    }
+
+                    .BTNmostrar{
+                        color:#fff9f9;
+                        text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                        font-weight: 700;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        font-size: 22px;
+                    }
+                    
+                    .BTNedit{
+                        color:#fff9f9;
+                        text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                        font-weight: 700;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                        font-size: 22px;
+                    }
+                }   
+            }
     }
 }
