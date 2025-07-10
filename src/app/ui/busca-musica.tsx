@@ -12,7 +12,11 @@ interface Musica {
   collectionName: string;
 }
 
-export default function BuscaMusicas() {
+interface Props {
+  playlistId: string;
+}
+
+export default function BuscaMusicas({ playlistId }: Props) {
   const [pesquisa, setPesquisa] = useState("");
   const [musicas, setMusicas] = useState([] as Musica[]);
 
@@ -24,13 +28,24 @@ export default function BuscaMusicas() {
     const response = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(pesquisa)}&media=music&limit=10`);
     const data = await response.json();
     setMusicas(data.results);
-
-    //const adicionarMusica = async (m: Musica) =>{
-    //    return m;
-    //}
   };
 
+  async function adicionarMusica(m: Musica) {
+    const response = await fetch("/api/musicas", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        ...m,
+        playlistID: playlistId, 
+      }),
+    });
+
+    const data = await response.json();
+
+  }
+
   return (
+    <div>
     <div className="apibox">
       <div className="buscaBOX">
         <input className="buscaMSC" type="search" placeholder="O que você quer ouvir?" value={pesquisa} onChange={(e) => setPesquisa(e.target.value)}/>
@@ -49,12 +64,13 @@ export default function BuscaMusicas() {
                   </div>
               </div>
               <div className="addBTNbox">
-                  {<button className="addMusicBTN"/* onClick={() => adicionarMusica(m)}*/>+</button>}
+                  <button className="addMusicBTN" onClick={() => adicionarMusica(m)}>+</button>
               </div>
               </li>
           ))}
           </ul>
         </div>
+    </div>
     </div>
   );
 }
