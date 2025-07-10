@@ -1,3 +1,7 @@
+.containerShow{
+    display: flex;
+    min-height: 75vh;
+}
 .paginaMusica {
     display: flex;
     flex-direction: column;
@@ -84,8 +88,10 @@
             .containerMeio{
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                width: 50%;
+                align-items: flex-start;
+                width: 74%;
+                min-height: 75vh;
+                margin-left: 3rem;
                 
                 .BTNpl{
                     display: flex;
@@ -118,7 +124,28 @@
                         border-radius: 1rem;
                         font-size: 22px;
                     }
-                }   
+
+                    .tituloMusica{
+                        color:#fff9f9;
+                        text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                        font-weight: 700;
+                        padding: 1rem;
+                        font-size: 22px;
+                        text-align: center;
+                        margin-left: 9rem;
+                }
+                } 
+
+                .containerDireita {
+                    flex: 1;
+                    width: 100%;
+                    border-radius: 0.8rem;
+                    padding: 1rem;
+                    overflow-y: auto;
+                    max-height: calc(75vh - 5rem);
+                }
             }
+            
+
     }
 }

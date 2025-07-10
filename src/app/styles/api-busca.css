@@ -91,6 +91,7 @@
                     }
 
                 }
+                
                .addBTNbox {
                 display: flex;
                 align-self: center;
@@ -100,14 +101,12 @@
                 .addMusicBTN {
                     width: 1.8rem;
                     height: 1.8rem;
-                    
                     background-color: #00ff88;
                     border-radius: 10rem;
                     border: none;
                     color: #000;
                     font-weight: 700;
                     font-size: 25px;
-                    
                     cursor: pointer;
                     transition: all 0.5s ease-in-out;
 

@@ -48,10 +48,10 @@ export default async function EditPlaylist({ params }: EditPlaylistProps) {
                   <a className="BTNbusca">Buscar Musica</a>
                   <a className="BTNmostrar">Ver Playlist</a>
                   <a className="BTNedit">Editar Playlist</a>
+                  <p className="tituloMusica">Músicas Salvas</p>
                 </div>
                 <div>
                   <EditPlaylistClient playlistId={playlistToEdit.id} />
-                  
                 </div>
               </div>
           </div>
