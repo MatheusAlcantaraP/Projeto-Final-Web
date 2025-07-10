@@ -1,4 +1,3 @@
-
 import "@/app/styles/playlistMusicas.css";
 import Link from 'next/link';
 import dbConexao from "@/app/libs/db-conexao";
@@ -43,5 +42,4 @@ export default async function ListaPlaylists() {
         </div>   
         )
     }
-
 }
