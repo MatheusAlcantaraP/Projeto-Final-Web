@@ -33,6 +33,9 @@ export default function PaginaPlaylist() {
 
   return (
     <div>
+      <div>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Giga:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"></link>
+      </div>
       <div className="containerHeader">
         <h1 className="tituloPrincipal">Crie suas Playlists!</h1>
         <Link href={`/dashboard/playlists`}>

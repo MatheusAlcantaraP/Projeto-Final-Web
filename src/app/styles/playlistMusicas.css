@@ -24,10 +24,10 @@
         padding-left: 1rem;
         padding-right: 1rem;
         border: solid 1px  #61526b;;
-        background-color: #a45ed3;;
+        background-color: #70309bc2;;
         color: #fff9f9;
         font-family: "Lily Script One", system-ui;
-        border-radius: 1.1rem;
+        border-radius: 0.5rem;
     }
 
     .containerPlaylistCriada{
@@ -38,26 +38,16 @@
         flex-wrap: wrap;
         gap: 2rem;
         
-        .CriarPlaylistBTN{
-            height: 4vh;
-            font-weight: 500;
-            margin-top: 0.8rem;
-            border: solid 1px  #61526b;;
-            background-color: #a45ed3;;
-            color: #fff9f9;
-            font-family: "Lily Script One", system-ui;
-            border-radius: 1.1rem;
-        }
         .playlistCriadaBox{
-            border: 2px solid #a45ed3;
+            border: 3px solid #3e245063;
             box-shadow: 0.5rem 0.5rem 1rem #272727;
             display: flex;
             flex-direction: row;
             background: linear-gradient(47deg,rgba(160, 108, 189, 1) 38%, rgba(255, 111, 92, 1) 73%, rgba(237, 158, 47, 1) 98%);
-            border-radius: 0.4;
+            border-radius: 0.3;
             min-width: 40vh;
-            min-height: 25vh;
-            max-height: 25vh;
+            min-height: 27vh;
+            max-height: 27vh;
             max-width: 40vh;
             border-radius: 0.5rem;
             margin-top: 2rem;
@@ -75,20 +65,25 @@
                 display: flex;
                 flex-direction: column;
                 margin-top: 1rem;
-                margin-left: 0.5rem;
+                margin-left: 0.8rem;
                 font-family: "Lily Script One", system-ui;
-
-                .deleteBTN{
-                    align-self: flex-end;
-                    margin-right: 0.5rem;
+                
+                .btn{
+                    display: flex;
+                    justify-content:center;
                     margin-top: 0;
-                    border-radius: 1rem;
-                    width: 12%;
+                }
+                .deleteBTN{
+                    margin-top: 1rem;
+                    align-self: flex-end;
+                    border-radius: 0.3rem;
+                    width: 4rem;
+                    height: 1.3rem;
                     color: rgb(13, 9, 15);
-                    font-weight: 800;
+                    font-weight: 750;
                     font-size: 10px;
-                    background-color: #b476b9;
-                    border-color: rgba(32, 26, 43, 0.322);
+                    background-color: #40254791;
+                    border-color: rgba(32, 26, 43, 0);
                     box-shadow:  0.2rem 0.2rem 0.3rem rgba(47, 39, 92, 0.116);
                 }
                 .playlistTitulo{
@@ -112,8 +107,8 @@
                     display: flex;
                     justify-self: center;
                     padding-top: 0.15rem;
-                    border: 1px solid #ffffff;
-                    background: linear-gradient(86deg,rgba(255, 249, 249, 1) 0%, rgba(219, 175, 222, 1) 100%);
+                    border: 1px solid #fff7e9ce;
+                    background: #fff0dc60;
                     color: #272727;
                     font-weight: 500;
                     text-shadow: 0.1rem 0.1rem 0.2rem rgba(110, 103, 145, 0.705);

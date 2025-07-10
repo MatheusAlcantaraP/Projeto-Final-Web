@@ -19,18 +19,24 @@ export default async function ListaPlaylists() {
         return <Playlist {...playlist} key={playlist.id}/>
     });
 
-        return (
-        <div className="pagina">
-            <h2 className="titulo">Suas Playlists</h2>
+        return (    
+        <div>
             <div>
-                <Link href={`/dashboard/`}>
-                    <button className="CriarPlaylistBTN">Criar outras Playlist</button>
-                </Link>
+                <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Giga:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"></link>
             </div>
-            <div className="containerPlaylistCriada">
-                {plalistsCards}
-            </div>
-        </div>   
+            <div className="pagina">
+        
+                <h2 className="titulo">Suas Playlists</h2>
+                <div>
+                    <Link href={`/dashboard/`}>
+                        <button className="CriarPlaylistBTN">Criar outras Playlist</button>
+                    </Link>
+                </div>
+                <div className="containerPlaylistCriada">
+                    {plalistsCards}
+                </div>
+            </div> 
+        </div>  
         )
     }
 }

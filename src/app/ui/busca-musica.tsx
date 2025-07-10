@@ -4,31 +4,27 @@ import "@/app/styles/api-busca.css";
 import { useState } from "react";
 
 interface Musica {
-  trackId: number;
-  trackName: string;
-  artistName: string;
-  artworkUrl100: string;
-  previewUrl: string;
-  collectionName: string;
+    trackId: number;
+    trackName: string;
+    artistName: string;
+    artworkUrl100: string;
+    previewUrl: string;
+    collectionName: string;
 }
 
 export default function BuscaMusicas() {
-  const [pesquisa, setPesquisa] = useState("");
-  const [musicas, setMusicas] = useState([] as Musica[]);
+    const [pesquisa, setPesquisa] = useState("");
+    const [musicas, setMusicas] = useState([] as Musica[]);
 
-  const buscar = async (e?: React.FormEvent) => {
-    if (e) e.preventDefault();
+    const buscar = async (e?: React.FormEvent) => {
+        if (e) e.preventDefault();
 
-    if (!pesquisa.trim()) return;
+        if (!pesquisa.trim()) return;
 
-    const response = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(pesquisa)}&media=music&limit=10`);
-    const data = await response.json();
-    setMusicas(data.results);
-
-    //const adicionarMusica = async (m: Musica) =>{
-    //    return m;
-    //}
-  };
+        const response = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(pesquisa)}&media=music&limit=10`);
+        const data = await response.json();
+        setMusicas(data.results);
+    };
 
   return (
     <div className="apibox">

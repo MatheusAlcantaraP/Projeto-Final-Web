@@ -1,7 +1,7 @@
 .tituloPrincipal{
     text-align: center;
     margin-top: 2rem;
-    color: #272727;
+    color: #0c0c0c;
     text-shadow: 0.2rem 0.2rem 0.4rem rgb(211, 198, 241);
     font-size: 36px;
     font-weight: bold;
@@ -21,8 +21,8 @@
         margin-top: 0.8rem;
         padding-left: 1rem;
         padding-right: 1rem;
-        border: solid 1px  #61526b;;
-        background-color: #a45ed3;;
+        border: solid 1px  #61526b;
+        background-color: #0c0c0c;
         color: #fff9f9;
         font-family: "Lily Script One", system-ui;
         border-radius: 1.1rem;
@@ -40,7 +40,7 @@
         flex-direction: column;
         border-radius: 1.8rem;
         background: linear-gradient(47deg,rgba(160, 108, 189, 1) 38%, rgba(255, 111, 92, 1) 73%, rgba(237, 158, 47, 1) 98%);
-        border: 2px solid #a45ed3;
+        border: 2px solid #25172ece;
         box-shadow: 0.5rem 0.5rem 1rem #272727;
         align-items: center;
         min-width: 40vh;
@@ -52,7 +52,7 @@
             padding-left: 4rem;
             padding-right: 4rem;
             margin-top: 1.6rem;
-            background: #fff9f9;
+            background: #ffffffde;
             border: 1px solid black;
             color: black;
             border-radius: 0.4rem;
@@ -64,8 +64,8 @@
             height: 3.5vh;
             margin-top: 0.8rem;
             border: solid 1px #a45ed3;
-            background: linear-gradient(86deg,rgba(255, 249, 249, 1) 0%, rgba(219, 175, 222, 1) 100%);
-            color: #272727;
+            background: #0c0c0cce;
+            color: #ffffff;
             font-family: "Lily Script One", system-ui;
             border-radius: 0.5rem;
         }

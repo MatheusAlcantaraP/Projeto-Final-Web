@@ -1,39 +1,49 @@
-'use client'
-
 import "@/app/styles/playlistShow.css";
 import Link from "next/link";
+import dbConexao from "../libs/db-conexao";
+import { redirect } from "next/navigation";
 
 const arquivo = 'db-playlist.json';
-const dbMusicasPath = "db-musicas.json";
 
 export interface PlaylistProps {
-  id: string;
-  nome: string;
-  url: string;
-  estilo: string;
-  email: string;
-  descricao: string;
-  musicasID: []
+    id: string;
+    nome: string;
+    url: string;
+    estilo: string;
+    email: string;
+    descricao: string;
+    musicasID: []
 }
 
 export default function Playlist(props: PlaylistProps) {
+    const deletePlaylist = async () => {
+        'use server';
+        const playlist = await dbConexao.retornaDB(arquivo);
+        const playlistToRemove = playlist.findIndex((p) => p.id === props.id);
 
+        playlist.splice(playlistToRemove,1);
+        await dbConexao.armazenaDB(arquivo, playlist);
 
-  return (
-  <div className="containerPlaylistCriada">
-    <div key={props.id} className="playlistCriadaBox">
-      <img src={props.url || "https://via.placeholder.com/150"} alt={props.nome} className="playlistImage" />
-      <div className="playlistInfo">
-        <button className="deleteBTN">X</button>
-        <h3 className="playlistTitulo">{props.nome}</h3>
-        <p className="playlistEstilo">{props.estilo}</p>
-        <p className="playlistDescricao">{props.descricao}</p>
-        <Link href={`/dashboard/playlists/${props.id}`}>
-          <button className="playlistLinkBTN">Editar / Adicionar Músicas</button>
-        </Link>
-      </div>
-    </div>
-  </div> 
-  
-)
+        redirect('/dashboard/playlists');
+      }
+      
+    return (
+    <div className="containerPlaylistCriada">
+        <div key={props.id} className="playlistCriadaBox">
+            <img src={props.url || "https://via.placeholder.com/150"} alt={props.nome} className="playlistImage" />
+                <div className="playlistInfo">
+
+                  <h3 className="playlistTitulo">{props.nome}</h3>
+                  <p className="playlistEstilo">{props.estilo}</p>
+                  <p className="playlistDescricao">{props.descricao}</p>
+                  <Link href={`/dashboard/playlists/${props.id}`}>
+                    <button className="playlistLinkBTN">Editar / Adicionar Músicas</button>
+                  </Link>
+                  <form action={deletePlaylist} className="btn">
+                    <button className="deleteBTN">Deletar</button>
+                  </form>
+                </div>
+        </div>
+    </div>   
+    ) 
 }

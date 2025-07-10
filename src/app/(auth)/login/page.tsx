@@ -79,7 +79,7 @@ export default function PaginaLogin(){
                     <h2 className="frase">Faça<br />
                     seu<br />
                     login!</h2>
-                    <p>Entre na sua conta, faça suas playlists, fuiewodji wqdqwd diuqwoi pwq  qdwdwq rfw dqw qwq </p>
+                    <p>Entre na sua conta, crie várias playlists, pesquise e favorite suas músicas!</p>
                 </div>
             </div>
             <div>

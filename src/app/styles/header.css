@@ -1,7 +1,7 @@
 .Header{
     text-align: center;
     padding: 1rem;
-    height: 8vh;
+    height: 6vh;
     background:  linear-gradient(45deg,rgba(160, 108, 189, 1) 20%, rgba(255, 111, 92, 1) 50%, rgba(237, 158, 47, 1) 80%);
     align-items: center;
     display: flex;
