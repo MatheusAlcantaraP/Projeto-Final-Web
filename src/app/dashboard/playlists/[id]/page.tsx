@@ -5,29 +5,12 @@ import { isSessionValid } from "@/app/libs/session";
 import BuscaMusicas from "@/app/ui/busca-musica";
 import EditPlaylistClient from './edit-playlist';
 import Link from 'next/link';
+import { PlaylistProps } from "@/app/ui/card-playlist"
 
 const arquivo = 'db-playlist.json';
 
 const dbMusicasPath = "db-musicas.json";
 
-interface PlaylistProps {
-  id: string;
-  nome: string;
-  url: string;
-  estilo: string;
-  email: string;
-  descricao: string;
-}
-
-interface MusicaProps {
-  nome: string;
-  artista: string;
-  preview: string;
-  capa: string;
-  genero: string;
-  duracao: string;
-  playlistID: []
-}
 
 interface EditPlaylistProps {
   params: { id: string };

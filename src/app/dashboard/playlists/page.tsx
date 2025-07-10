@@ -3,6 +3,7 @@ import Link from 'next/link';
 import dbConexao from "@/app/libs/db-conexao";
 import { isSessionValid } from "@/app/libs/session";
 import { redirect } from "next/navigation";
+import Playlist from "@/app/ui/card-playlist";
 
 const dbPlaylistPath = "db-playlist.json";
 
@@ -14,7 +15,10 @@ export default async function ListaPlaylists() {
         const userEmail = session.userEmail
         const todasPlaylists = await dbConexao.retornaDB(dbPlaylistPath);
         const playlists = todasPlaylists.filter((p) => p.userEmail === userEmail);
-        
+        const plalistsCards = playlists.map((playlist) => {
+        return <Playlist {...playlist} key={playlist.id}/>
+    });
+
         return (
         <div className="pagina">
             <h2 className="titulo">Suas Playlists</h2>
@@ -24,21 +28,8 @@ export default async function ListaPlaylists() {
                 </Link>
             </div>
             <div className="containerPlaylistCriada">
-                {playlists.map((p) => (
-                    <div key={p.id} className="playlistCriadaBox">
-                    <img src={p.url || "https://via.placeholder.com/150"} alt={p.nome} className="playlistImage" />
-                    <div className="playlistInfo">
-                        <button className="deleteBTN">X</button>
-                        <h3 className="playlistTitulo">{p.nome}</h3>
-                        <p className="playlistEstilo">{p.estilo}</p>
-                        <p className="playlistDescricao">{p.descricao}</p>
-                        <Link href={`/dashboard/playlists/${p.id}`}>
-                        <button className="playlistLinkBTN">Editar / Adicionar Músicas</button>
-                        </Link>
-                    </div>
-                    </div>
-                ))}
-            </div> 
+                {plalistsCards}
+            </div>
         </div>   
         )
     }

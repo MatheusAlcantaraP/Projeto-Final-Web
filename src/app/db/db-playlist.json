@@ -6,6 +6,21 @@
     "estilo": "indie",
     "descricao": "Playlist criada para ouvir indie legal! 🎶👋",
     "userEmail": "matheus9522@outlook.com"
+  },
+  {
+    "id": "5c1f3407-897a-42d9-ae15-ddd9ec664cb9",
+    "nome": "laura muito legal",
+    "url": "https://media.tenor.com/dp2xCMlfb4kAAAAi/nerd-emoji.gif",
+    "estilo": "legal",
+    "descricao": "oi",
+    "userEmail": "saialaura433@gmail.com"
+  },
+  {
+    "id": "c1bad783-a16d-4552-8906-788c14a881fa",
+    "nome": "laura muito legal",
+    "url": "https://media.tenor.com/dp2xCMlfb4kAAAAi/nerd-emoji.gif",
+    "estilo": "legal",
+    "descricao": "oi",
+    "userEmail": "saialaura433@gmail.com"
   }
-
 ]
