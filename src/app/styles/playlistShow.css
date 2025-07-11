@@ -23,7 +23,7 @@
         border-radius: 1.1rem;
         font-family: "Lily Script One", system-ui;
     }
-    
+
     .containerPlaylistCriada {
         display: flex;
         flex-direction: row;
@@ -87,58 +87,57 @@
             }
         }
 
-            .containerMeio{
-                display: flex;
-                flex-direction: column;
-                width: 74%;
-                min-height: 75vh;
-                max-height: 75vh;
-                margin-left: 3rem;
+        .containerMeio{
+            display: flex;
+            flex-direction: column;
+            width: 74%;
+            min-height: 75vh;
+            max-height: 75vh;
+            margin-left: 3rem;
                 
-                .BTNpl{
+            .BTNpl{
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                    
+                .BTNbusca{
+                    color:#fff9f9;
+                    text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                    font-weight: 700;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    font-size: 22px;
+                }
+
+                .BTNmostrar{
+                    color:#fff9f9;
+                    text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                    font-weight: 700;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    font-size: 22px;
+                }
+                    
+                .BTNedit{
+                    color:#fff9f9;
+                    text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                    font-weight: 700;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                    font-size: 22px;
+                }
+
+                .tituloMusica{
                     display: flex;
-                    flex-direction: row;
-                    gap: 2rem;
-                    
-                    .BTNbusca{
-                        color:#fff9f9;
-                        text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
-                        font-weight: 700;
-                        padding: 1rem;
-                        border-radius: 1rem;
-                        font-size: 22px;
-
-                    }
-
-                    .BTNmostrar{
-                        color:#fff9f9;
-                        text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
-                        font-weight: 700;
-                        padding: 1rem;
-                        border-radius: 1rem;
-                        font-size: 22px;
-                    }
-                    
-                    .BTNedit{
-                        color:#fff9f9;
-                        text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
-                        font-weight: 700;
-                        padding: 1rem;
-                        border-radius: 1rem;
-                        font-size: 22px;
-                    }
-
-                    .tituloMusica{
-                        display: flex;
-                        color:#fff9f9;
-                        text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
-                        font-weight: 700;
-                        padding: 1rem;
-                        font-size: 22px;
-                        margin-left: 15rem;
-                        text-align: center;
-                    }
+                    color:#fff9f9;
+                    text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+                    font-weight: 700;
+                    padding: 1rem;
+                    font-size: 22px;
+                    margin-left: 15rem;
+                    text-align: center;
                 }
             }
+        }
     }
 }

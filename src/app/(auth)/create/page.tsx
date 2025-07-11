@@ -7,7 +7,6 @@ import toast from 'react-hot-toast'
 import {createUser} from '@/app/libs/credentials';
 import {LoginCredentials} from "../login/page"
 import {redirect} from "next/navigation";
-import disco from "public/disco.gif"
 import userlogin from "public/user-login.gif"
 import Image from "next/image"
 
@@ -85,7 +84,6 @@ export default function PaginaRegistrar(){
                 </div>
 
             </div>
-
         </main>
     )
 }

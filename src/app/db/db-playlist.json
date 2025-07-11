@@ -1,34 +1,18 @@
 [
   {
-    "id": "4f680a4a-5409-4ac6-9b67-8908d0ae3351",
-    "nome": "love of mine",
-    "url": "https://i.redd.it/t1d17taqs9961.png",
-    "estilo": "indie",
-    "descricao": "Playlist criada para ouvir indie legal! 🎶👋",
+    "id": "c80e80d2-b24e-46c2-8f53-d001a8ec84ec",
+    "nome": "laura",
+    "url": "https://img.freepik.com/vetores-gratis/fundo-mistico-de-pixel-art_52683-87349.jpg?semt=ais_hybrid&w=740",
+    "estilo": "rock",
+    "descricao": "Playlist criada para ouvir musicas legais! 🎶👋",
     "userEmail": "matheus9522@outlook.com"
   },
   {
-    "id": "5c1f3407-897a-42d9-ae15-ddd9ec664cb9",
-    "nome": "laura muito legal",
-    "url": "https://media.tenor.com/dp2xCMlfb4kAAAAi/nerd-emoji.gif",
-    "estilo": "legal",
-    "descricao": "oi",
-    "userEmail": "saialaura433@gmail.com"
-  },
-  {
-    "id": "c1bad783-a16d-4552-8906-788c14a881fa",
-    "nome": "laura muito legal",
-    "url": "https://media.tenor.com/dp2xCMlfb4kAAAAi/nerd-emoji.gif",
-    "estilo": "legal",
-    "descricao": "oi",
-    "userEmail": "saialaura433@gmail.com"
-  },
-  {
-    "id": "435abe57-ba45-4ab5-808d-0d3a5fa8e6aa",
-    "nome": "Vitor",
-    "url": "https://i.pinimg.com/originals/07/ad/1c/07ad1cccaa5bdd1db9a26ebdaca132df.gif",
-    "estilo": "Rock",
-    "descricao": "ouvi rock me deixa sanguinario 🩸",
-    "userEmail": "vitor@gmail.com"
+    "id": "edd716da-8688-417a-8019-492172dace6e",
+    "nome": "laura",
+    "url": "https://64.media.tumblr.com/5a0f6c71ca99b56a0f9a63579fa9fb22/858f89208af8b435-cb/s1280x1920/f40f48c2cf7d75a5d3fddf9b7e6716e7db28d01b.png",
+    "estilo": "punk",
+    "descricao": "playlist legal criada pra ouvir musica muitos legais a blablalbablablablablalbal",
+    "userEmail": "matheus9522@outlook.com"
   }
 ]

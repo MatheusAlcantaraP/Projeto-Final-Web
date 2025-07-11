@@ -1,13 +1,12 @@
 'use client'
 
 import "@/app/styles/login.css"
-import Link from "next/link"
 import z from 'zod';
 import toast from 'react-hot-toast';
-import { validateCredentials } from '@/app/libs/credentials';
 import Image from "next/image";
-import disco from "public/disco.gif"
+import Link from "next/link"
 import userlogin from "public/user-login.gif"
+import { validateCredentials } from '@/app/libs/credentials';
 import { redirect } from "next/navigation";
 
 export interface LoginCredentials{
@@ -60,7 +59,7 @@ export default function PaginaLogin(){
     }
 
     return(
-        <div >
+        <div>
             <div>
                 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Giga:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"></link>
                 <h1>Bem vindo ao seu aplicativo de música!</h1>

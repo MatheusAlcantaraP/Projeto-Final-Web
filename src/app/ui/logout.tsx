@@ -13,7 +13,7 @@ export default async function LogoutButton(){
         redirect('/login');
     }
 
-    if(!session) 
+    if(!session)
     return;
     
     return(
