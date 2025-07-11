@@ -24,7 +24,7 @@ export default function MusicasSalvas({ playlistId }: { playlistId: string }) {
   }, [playlistId]);
 
   return (
-    <div className="containerDireita">
+    <div className="containerDireita1">
         <div className="containerMusicas">
         <ul className="ulMusica">
             {musicas.map((musica) => (

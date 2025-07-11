@@ -3,11 +3,12 @@
         height: 5vh;
         width: 9vh;
         font-weight: 600;
+        font-size: 15px;
         padding-left: 1rem;
         padding-right: 1rem;
-        border: solid 2px  #1d1206;;
-        background-color: #ffffff;;
-        color: #000000;
+        border: solid 1px  #61526b;;
+        background-color: #0c0c0c;
+        color: #fff9f9;
         font-family: "Lily Script One", system-ui;
         border-radius: 0.8rem
 }

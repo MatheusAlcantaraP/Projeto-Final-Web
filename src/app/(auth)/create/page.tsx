@@ -81,13 +81,11 @@ export default function PaginaRegistrar(){
                     <h2 className="frase">Faça<br />
                     seu<br />
                     Cadastro!</h2>
-                    <p>Crie sua conta, faça suas playlists, fuiewodji wqdqwd diuqwoi pwq  qdwdwq rfw dqw qwq </p>
+                    <p>Crie sua conta, crie várias playlists, pesquise e favorite suas músicas! </p>
                 </div>
 
             </div>
-            <div>
-                <Image className='discoIMG'src={disco} alt=""/>
-            </div>
+
         </main>
     )
 }

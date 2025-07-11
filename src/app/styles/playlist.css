@@ -38,9 +38,9 @@
     .containerPlaylist{
         display: flex;
         flex-direction: column;
-        border-radius: 1.8rem;
+        border-radius: 1rem;
         background: linear-gradient(47deg,rgba(160, 108, 189, 1) 38%, rgba(255, 111, 92, 1) 73%, rgba(237, 158, 47, 1) 98%);
-        border: 2px solid #25172ece;
+        border: 3px solid #3e245063;
         box-shadow: 0.5rem 0.5rem 1rem #272727;
         align-items: center;
         min-width: 40vh;
@@ -66,6 +66,7 @@
             border: solid 1px #a45ed3;
             background: #0c0c0cce;
             color: #ffffff;
+            font-weight: 600;
             font-family: "Lily Script One", system-ui;
             border-radius: 0.5rem;
         }

@@ -82,9 +82,6 @@ export default function PaginaLogin(){
                     <p>Entre na sua conta, crie várias playlists, pesquise e favorite suas músicas!</p>
                 </div>
             </div>
-            <div>
-                <Image className='discoIMG'src={disco} alt=""/>
-            </div>
         </div>
        
     )
