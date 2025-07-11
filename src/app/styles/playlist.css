@@ -48,9 +48,9 @@
         border: 3px solid #3e245063;
         box-shadow: 0.5rem 0.5rem 1rem #272727;
         align-items: center;
-        min-width: 40vh;
-        min-height: 32vh;
-        max-height: 32vh;
+        min-width: 55vh;
+        min-height: 45vh;
+        max-height: 45vh;
  
         .inputs{
             padding: 0.5rem;

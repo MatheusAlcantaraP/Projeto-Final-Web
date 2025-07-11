@@ -52,10 +52,10 @@
             flex-direction: row;
             background: linear-gradient(47deg,rgba(160, 108, 189, 1) 38%, rgba(255, 111, 92, 1) 73%, rgba(237, 158, 47, 1) 98%);
             border-radius: 0.3;
-            min-width: 45vh;
-            min-height: 35vh;
-            max-height: 35vh;
-            max-width: 45vh;
+            min-width: 53vh;
+            min-height: 42vh;
+            max-height: 42vh;
+            max-width: 53vh;
             border-radius: 0.5rem;
             margin-top: 2rem;
             

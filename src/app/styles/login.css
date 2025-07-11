@@ -92,7 +92,7 @@ h1{
         .loginBTN{
             align-self: center;
             width: 40%;
-            margin-top: 4.5rem;
+            margin-top: 1.4rem;
             padding: 6px;
             border: solid 1px rgb(255, 255, 255);
             background-color:  #0c0c0c;
@@ -117,5 +117,4 @@ h1{
             }
         }
     }
-} 
-
+}

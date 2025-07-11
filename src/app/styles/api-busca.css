@@ -47,7 +47,7 @@
     
     .musicasBOX{
         width: 600px;
-        max-height: 500px;
+        max-height: 50vh;
         margin-top: 2rem;
         overflow-y: auto;
         
@@ -131,4 +131,3 @@
         }
     }
 }
-

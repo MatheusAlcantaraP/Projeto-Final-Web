@@ -21,7 +21,6 @@ export default function BuscaMusicas({ playlistId }: Props) {
 
 	const buscar = async (e?: React.FormEvent) => {
         if (e) e.preventDefault();
-		if (!pesquisa.trim()) return;
 
 		const response = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(pesquisa)}&media=music&limit=10`);
 		const data = await response.json();
@@ -60,7 +59,7 @@ export default function BuscaMusicas({ playlistId }: Props) {
 								</div>
 							</div>
 							<div className="addBTNbox">
-								<button className="addMusicBTN" onClick={() => adicionarMusica(m)}>+</button>
+								<button className="addMusicBTN" onClick={() => (adicionarMusica(m), alert('Música adicionada à playlist!'))}>+</button>
 							</div>
 						</li>
 						))}
