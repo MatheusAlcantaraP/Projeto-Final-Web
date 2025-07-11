@@ -10,9 +10,8 @@ export interface PlaylistProps {
     nome: string;
     url: string;
     estilo: string;
-    email: string;
+    userEmail: string;
     descricao: string;
-    musicasID: []
 }
 
 export default function Playlist(props: PlaylistProps) {

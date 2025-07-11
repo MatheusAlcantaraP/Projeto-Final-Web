@@ -45,9 +45,9 @@ export default async function MostraPlaylist({ params }: PlaylistIDProps) {
 				</div>
 				<div className="containerMeio">
 					<div className="BTNpl">
-						<a className="BTNbusca">Buscar Músicas</a>
+						<Link  className="BTNmostrar" href={`/dashboard/playlists/${id}`}>Buscar Musicas</Link>
 						<Link  className="BTNmostrar" href={`/dashboard/playlists/${id}/mostraMSC`}>Ver Playlist</Link>
-						<a className="BTNedit">Editar Playlist</a>
+						<Link  className="BTNmostrar" href={`/dashboard/playlists/${id}/edit`}>Editar Playlist</Link>
 						<p className="tituloMusica">Músicas Salvas</p>
 					</div>
 					<div>

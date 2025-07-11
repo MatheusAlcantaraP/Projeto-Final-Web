@@ -99,26 +99,8 @@
                 display: flex;
                 flex-direction: row;
                 gap: 2rem;
-                    
-                .BTNbusca{
-                    color:#fff9f9;
-                    text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
-                    font-weight: 700;
-                    padding: 1rem;
-                    border-radius: 1rem;
-                    font-size: 22px;
-                }
 
                 .BTNmostrar{
-                    color:#fff9f9;
-                    text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
-                    font-weight: 700;
-                    padding: 1rem;
-                    border-radius: 1rem;
-                    font-size: 22px;
-                }
-                    
-                .BTNedit{
                     color:#fff9f9;
                     text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
                     font-weight: 700;
