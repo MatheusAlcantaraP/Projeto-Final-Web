@@ -9,7 +9,13 @@
         border: solid 1px  #61526b;;
         background-color: #0c0c0c;
         color: #fff9f9;
-        font-family: "Lily Script One", system-ui;
-        border-radius: 0.8rem
+        border-radius: 0.8rem;
+        font-family: "Lexend Giga", sans-serif;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        
+            &:hover {
+                transform: scale(1.06);
+            }
     }
 }

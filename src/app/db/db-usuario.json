@@ -13,5 +13,15 @@
     "id": "852b59ee-747a-47ba-9334-46789177a0ed",
     "email": "saialaura433@gmail.com",
     "senha": "$2b$10$7cYEO5R0rmrXAIlxZ/KuRufWuZ9ME5e0rQ7qrbk2yUwhJtAZSsu9y"
+  },
+  {
+    "id": "854ca8f9-267b-43af-bf7d-516ce1101886",
+    "email": "vitor@gmail.com",
+    "senha": "$2b$10$TbYZsV4deA2txdwyKPHusOdai9VFjI7fWRb20u1BGnXeY/VrhMzOO"
+  },
+  {
+    "id": "444e0160-126b-4e35-b23c-a7ee516da2d2",
+    "email": "matheus@outlook.com",
+    "senha": "$2b$10$6cdh9Z4kqXixqyQUrpYyR.lg5jbojs4y7ZRPb6i049JWPvhrJnpAS"
   }
 ]

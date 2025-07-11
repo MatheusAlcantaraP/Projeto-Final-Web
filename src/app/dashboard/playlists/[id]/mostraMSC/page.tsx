@@ -27,6 +27,9 @@ export default async function MostraMusica({ params }: PlaylistIDProps) {
 
     return (
         <div className="paginaMusica">
+            <div>
+				<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Giga:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"></link>
+			</div>
             <Link href={`/dashboard/playlists`}>
             <button className="BTNmusica">Ver Playlists</button>
             </Link>

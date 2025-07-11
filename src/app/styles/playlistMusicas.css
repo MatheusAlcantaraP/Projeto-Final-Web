@@ -20,14 +20,21 @@
         height: 4vh;
         width: 13rem;
         font-weight: 500;
+        font-size: 12px;
         margin-top: 0.8rem;
         padding-left: 1rem;
         padding-right: 1rem;
         border: solid 1px  #61526b;
         background-color: #0c0c0c;
         color: #fff9f9;
-        font-family: "Lily Script One", system-ui;
+        font-family: "Lexend Giga", sans-serif;
         border-radius: 1.1rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        
+        &:hover {
+            transform: scale(1.06);
+        }
     }
 
     .containerPlaylistCriada{
@@ -55,35 +62,34 @@
             .playlistImage{
                 width: 50%;
                 border-radius: 0.5rem;
-
                 object-fit: cover;
             }
 
             .playlistInfo{
-
                 color: #fff9f9;
                 text-shadow: 0.2rem 0.2rem 0.4rem rgb(23, 23, 29);
                 display: flex;
                 flex-direction: column;
                 margin-top: 1rem;
                 margin-left: 0.8rem;
-                font-family: "Lily Script One", system-ui;
-                
+                font-family: "Lexend Giga", sans-serif;
                 
                 .playlistTitulo{
-                    font-size: 23px;
+                    font-size: 21px;
                     font-weight: 700;
                 }
 
                 .playlistEstilo{
                     color: #ffffff;
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 600;
                     text-shadow: 0.2rem 0.2rem 0.4rem rgb(23, 23, 29);
                 }
 
                 .playlistDescricao{
                     font-weight: 500;
+                    text-align: flex-start;
+                    font-size: 14px;
                     text-shadow: 0.2rem 0.2rem 0.4rem rgb(23, 23, 29);
                     margin-top: 1rem;
                 }
@@ -96,32 +102,45 @@
                     border: solid 1px  #61526b;;
                     background-color: #0c0c0c;
                     color: #ffffff;
-                    font-weight: 500;
-                    font-size: 13px;
+                    font-weight: 600;
+                    font-size: 14px;
                     text-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.705);
                     border-radius: 0.9rem;
                     width: 85%;
-                    font-family: "Lily Script One", system-ui;
+                    font-family: "Josefin Sans", sans-serif;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    
+                        &:hover {
+                            transform: scale(1.06);
+                        }
                 }
 
                 .btn{
                     display: flex;
                     justify-content: center;
                     margin-top: 0.5rem;
+                    
                     .deleteBTN{
                         display: flex;
                         justify-content: center;
-                        justify-content: center;
+                        align-items: center;
                         border-radius: 0.3rem;
                         width: 4rem;
                         height: 1.3rem;
                         color: #fff9f9;
-                        font-weight: 750;
-                        font-size: 10px;
+                        font-weight: 700;
+                        font-size: 12px;
                         border: 1px solid #00000080;
                         background: #0c0c0cbe;
                         box-shadow:  0.2rem 0.2rem 0.3rem rgba(47, 39, 92, 0.116);
-                        font-family: "Lily Script One", system-ui;
+                        font-family: "Josefin Sans", sans-serif;
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    
+                        &:hover {
+                            transform: scale(1.06);
+                        }
                     }
                 }
             }

@@ -24,8 +24,14 @@
         border: solid 1px  #61526b;
         background-color: #0c0c0c;
         color: #fff9f9;
-        font-family: "Lily Script One", system-ui;
+        font-family: "Lexend Giga", sans-serif;
         border-radius: 1.1rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        
+        &:hover {
+            transform: scale(1.06);
+        }
     }
 }
 
@@ -53,8 +59,14 @@
             margin-top: 1.6rem;
             background: #ffffffde;
             border: 1px solid black;
+            font-family: "Josefin Sans", sans-serif;
             color: black;
             border-radius: 0.4rem;
+
+            &::placeholder{
+                color: #000000;
+                font-weight: 600; 
+            }
         }
 
         .btnCriarPlaylist{
@@ -66,8 +78,15 @@
             background: #0c0c0cce;
             color: #ffffff;
             font-weight: 600;
-            font-family: "Lily Script One", system-ui;
+            font-size: 11px;
+            font-family: "Lexend Giga", sans-serif;
             border-radius: 0.5rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        
+            &:hover {
+                transform: scale(1.06);
+            }
         }
     }
 }

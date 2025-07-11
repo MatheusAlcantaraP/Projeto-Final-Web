@@ -11,34 +11,42 @@
     border-radius: 1.5rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
     gap: 2rem;
+    transition: all 0.3s ease-in-out;
+
     .BTNmostrar{
         color:#fff9f9;
         text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
+        background-color: transparent;
+        border: 2px solid #ffffff80;
         font-weight: 700;
         padding: 1rem;
         border-radius: 1rem;
-        font-size: 22px;
-        .BTNmostrar:hover {
+        font-size: 18px;
+        margin-left: 0.5rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: "Lexend Giga", sans-serif;
+
+        &:hover {
             background-color: #ffffff1f;
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
     }
+
     .dispo{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row-reverse;      
-    width: 100%;
-    margin-top: 1rem;
-    gap: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-top: 1rem;
+        gap: 2rem;
+
         h2{
             font-family: "Lexend Giga", sans-serif;
             font-size: 35px;
-            margin-left: 5rem;
-            margin-top: 10rem;
             color: #fff9f9;
         }
+        
         .containerATPlaylist{
             background-color: #0000007e;
             border-radius: 1rem;
@@ -46,24 +54,27 @@
             flex-direction: column;
             align-items: center;
             padding: 1rem;
+
             .IMGAT{
-            border-radius: 1rem;
-            margin-top: 1rem;
-            width: 100%;
-            max-width: 400px;
+                border-radius: 1rem;
+                margin-top: 1rem;
+                width: 100%;
+                max-width: 400px;
             }
+
             .inputs{
                 padding: 0.5rem;
-                padding-left: 4rem;
-                padding-right: 4rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
                 margin-top: 1.6rem;
-                background: #ffffffde;
+                background: #ffffffdc;
                 border: 1px solid black;
-                color: black;
                 border-radius: 0.4rem;
+                color: rgb(0, 0, 0);
+                font-family: "Josefin Sans", sans-serif;
             }
+
             .btnAtualizarPlaylist{
-                align-self: center;
                 width: 30%;
                 height: 3.5vh;
                 margin-top: 0.8rem;
@@ -71,8 +82,9 @@
                 background: #0c0c0cce;
                 color: #ffffff;
                 font-weight: 600;
-                font-family: "Lily Script One", system-ui;
                 border-radius: 0.5rem;
+                font-size: 12px;
+                font-family: "Lexend Giga", sans-serif;
             }
         }
     }

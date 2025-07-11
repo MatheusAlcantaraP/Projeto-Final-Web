@@ -1,26 +1,34 @@
 [
   {
-    "id": "c80e80d2-b24e-46c2-8f53-d001a8ec84ec",
-    "nome": "laura",
-    "url": "https://img.freepik.com/vetores-gratis/fundo-mistico-de-pixel-art_52683-87349.jpg?semt=ais_hybrid&w=740",
-    "estilo": "rock",
-    "descricao": "Playlist criada para ouvir musicas legais! 🎶👋",
-    "userEmail": "matheus9522@outlook.com"
-  },
-  {
-    "id": "edd716da-8688-417a-8019-492172dace6e",
-    "nome": "laura",
-    "url": "https://64.media.tumblr.com/5a0f6c71ca99b56a0f9a63579fa9fb22/858f89208af8b435-cb/s1280x1920/f40f48c2cf7d75a5d3fddf9b7e6716e7db28d01b.png",
-    "estilo": "punk",
-    "descricao": "playlist legal criada pra ouvir musica muitos legais a blablalbablablablablalbal",
-    "userEmail": "matheus9522@outlook.com"
-  },
-  {
     "id": "964c1f58-a9cd-463b-b7db-46cf88504933",
     "nome": "Laura daora",
     "url": "https://gifdb.com/images/high/broken-heart-healing-ajkkelggdc5l6lyv.gif",
     "estilo": "triste",
     "descricao": "descricao",
     "userEmail": "saialaura433@gmail.com"
+  },
+  {
+    "id": "33d28fd2-e36c-4669-81bd-6f0f1b97b4d7",
+    "nome": "love of mine",
+    "url": "https://pbs.twimg.com/media/FMTlCFFWQBAeqzM.png",
+    "estilo": "indie",
+    "descricao": "playlist criada para ouvir br legal! 🎶👋👾👾🐢🇧🇷",
+    "userEmail": "matheus9522@outlook.com"
+  },
+  {
+    "id": "79b1006a-5a47-4ea1-baad-8a9184f9e34e",
+    "nome": "playlist mudada",
+    "url": "https://www.nintendo.com/eu/media/images/08_content_images/games_6/nintendo_switch_7/nswitch_darksouls/CI_NSwitch_DarkSoulsRemastered_phantom04.jpg",
+    "estilo": "rock mudado",
+    "descricao": "só as legais 2",
+    "userEmail": "matheus@outlook.com"
+  },
+  {
+    "id": "a3f274a1-1d1c-4ffd-8212-c60e1f01ea4b",
+    "nome": "playlist 2",
+    "url": "https://gamehall.com.br/wp-content/uploads/2018/02/Dark-Souls-III-KeyArt-Ember.jpg",
+    "estilo": "dark souls",
+    "descricao": "só as musicas do dark souls dahora",
+    "userEmail": "matheus@outlook.com"
   }
 ]

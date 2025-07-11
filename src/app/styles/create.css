@@ -76,9 +76,16 @@ h1{
             padding-left: 6.5rem;
             padding-right: 6.5rem;
             margin-bottom: 0.1rem;
-            background-color:#FFF9F9;
+            background-color:#dbd5d570;
             border-radius: 0.4rem;
             border-color: #463a45c5;
+            font-weight: 600;
+            font-family: "Josefin Sans", sans-serif;
+
+            &::placeholder{
+                color: #000000;
+                font-weight: 600; 
+            }
         } 
 
         .registrarBTN{
@@ -90,7 +97,13 @@ h1{
             background-color:  #0c0c0c;
             color: rgb(255, 255, 255);
             font-family: "Josefin Sans", sans-serif;
-             border-radius: 0.4rem;
+            border-radius: 0.4rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        
+            &:hover {
+                transform: scale(1.06);
+            }
         }
             
         .Login{

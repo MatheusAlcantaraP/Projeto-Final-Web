@@ -21,7 +21,14 @@
         background-color: #0c0c0c;
         color: #fff9f9;
         border-radius: 1.1rem;
-        font-family: "Lily Script One", system-ui;
+        font-family: "Lexend Giga", sans-serif;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #0c0c0c;
+            transform: scale(1.02);
+        }
     }
 
     .containerPlaylistCriada {
@@ -42,13 +49,13 @@
             border-top-left-radius: 1rem;
             border-bottom-left-radius: 1rem;
             background: linear-gradient(45deg,rgba(162, 87, 212, 1) 0%, rgba(250, 90, 90, 1) 50%, rgba(252, 198, 121, 1) 100%);
-            
+            font-family: "Lexend Giga", sans-serif;
+
             .playlistImage {
                 display: flex;
                 justify-content: center;
                 align-self: center;
                 margin-top: 1rem;
-                
                 width: 40vh;
                 height: 40vh;
                 object-fit: cover;
@@ -56,10 +63,9 @@
             }
 
             .playlistInfo {
-                
                 .playlistNome{
                     margin: 0.25rem;
-                    font-size: 1rem;
+                    font-size: 13px;
                     color: #fff9f9;
                     text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
                     text-align: center;
@@ -80,7 +86,7 @@
                 .playlistDescricao{
                     color: #fff9f9;
                     text-align: center;
-                    font-size: 1.5rem;
+                    font-size: 20px;
                     margin-top: 2rem;
                     text-shadow: 0.2rem 0.2rem 0.4rem rgb(47, 39, 92);
                 }
@@ -94,11 +100,14 @@
             min-height: 75vh;
             max-height: 75vh;
             margin-left: 3rem;
-                
+            
             .BTNpl{
                 display: flex;
                 flex-direction: row;
                 gap: 2rem;
+                background-color: transparent;
+                border-bottom: 2px solid #ffffff80;
+                font-family: "Lexend Giga", sans-serif;
 
                 .BTNmostrar{
                     color:#fff9f9;
@@ -106,7 +115,15 @@
                     font-weight: 700;
                     padding: 1rem;
                     border-radius: 1rem;
-                    font-size: 22px;
+                    font-size: 16px;
+                    background-color: transparent;
+                    border: 2px solid #ffffff02;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: #ffffff1f;
+                        transform: scale(1.03);
+                    }
                 }
 
                 .tituloMusica{

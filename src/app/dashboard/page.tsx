@@ -34,7 +34,7 @@ export default async function PaginaPlaylist() {
   
     	if(CreatePlaylistResult.success)
     	{
-      	redirect(`/dashboard/playlists/`);
+      		redirect(`/dashboard/playlists/`);
     	}
   	}
 

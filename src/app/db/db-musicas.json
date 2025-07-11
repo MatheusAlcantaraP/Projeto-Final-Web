@@ -1,65 +1,5 @@
 [
   {
-    "trackId": 1710608813,
-    "trackName": "A Night To Remember",
-    "artistName": "beabadoobee & Laufey",
-    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/13/49/83/1349838e-b697-f484-e6d4-c7ef0976333a/196922666971_Cover.jpg/100x100bb.jpg",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/db/ec/2a/dbec2a7e-8984-eafe-892e-2f9ebb4fc940/mzaf_3593500613249666390.plus.aac.p.m4a",
-    "collectionName": "A Night To Remember - Single",
-    "primaryGenreName": "Alternative",
-    "playlistID": "c80e80d2-b24e-46c2-8f53-d001a8ec84ec"
-  },
-  {
-    "trackId": 1631390129,
-    "trackName": "The Perfect Pair",
-    "artistName": "beabadoobee",
-    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/15/13/6b/15136b77-3a59-2f4e-d0ae-588f8d64802b/196922094361_Cover.jpg/100x100bb.jpg",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/cd/ca/d7cdcaa4-9416-c588-09e9-e47bb4f03c19/mzaf_12888663968829275216.plus.aac.p.m4a",
-    "collectionName": "Beatopia (The Antidote Edition)",
-    "primaryGenreName": "Alternative",
-    "playlistID": "c80e80d2-b24e-46c2-8f53-d001a8ec84ec"
-  },
-  {
-    "trackId": 1435258133,
-    "trackName": "Coffee",
-    "artistName": "beabadoobee",
-    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9a/9e/05/9a9e0570-bee1-20b5-e512-38b5e1168a76/192641174858_Cover.jpg/100x100bb.jpg",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/8e/96/bb/8e96bb39-9543-97e0-86a3-eda9eddab914/mzaf_14089588875445007256.plus.aac.p.m4a",
-    "collectionName": "Coffee - Single",
-    "primaryGenreName": "Alternative",
-    "playlistID": "c80e80d2-b24e-46c2-8f53-d001a8ec84ec"
-  },
-  {
-    "trackId": 1444723454,
-    "trackName": "Dance with Me",
-    "artistName": "beabadoobee",
-    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3e/46/a3/3e46a3cf-da65-4c07-cb00-cbb4ebdaf76a/192641227813_Cover.jpg/100x100bb.jpg",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/dd/90/da/dd90da81-d3fb-a594-5850-dd73cb267ade/mzaf_4865917977335128514.plus.aac.p.m4a",
-    "collectionName": "Patched Up",
-    "primaryGenreName": "Alternative",
-    "playlistID": "c80e80d2-b24e-46c2-8f53-d001a8ec84ec"
-  },
-  {
-    "trackId": 1717103463,
-    "trackName": "Sexta",
-    "artistName": "Kamaitachi",
-    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/72/18/ff/7218ffcf-96a7-d660-4f0b-d7f19026a722/0.jpg/100x100bb.jpg",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/f0/eb/00/f0eb00e0-d66d-ec20-439b-3686643b61cd/mzaf_6201094278155148804.plus.aac.p.m4a",
-    "collectionName": "Festa",
-    "primaryGenreName": "Pop",
-    "playlistID": "edd716da-8688-417a-8019-492172dace6e"
-  },
-  {
-    "trackId": 1702236255,
-    "trackName": "Cabelos Arco-Íris",
-    "artistName": "Kamaitachi",
-    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/56/71/fd/5671fdb4-48ed-849d-b8de-6e25e9118e0f/0.jpg/100x100bb.jpg",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/93/44/bc/9344bca8-b90e-8134-6e3f-34f9687d9ef5/mzaf_7299294954965728122.plus.aac.p.m4a",
-    "collectionName": "Homem Torto",
-    "primaryGenreName": "Alternative",
-    "playlistID": "edd716da-8688-417a-8019-492172dace6e"
-  },
-  {
     "trackId": 1431643741,
     "trackName": "Hi High",
     "artistName": "LOONA",
@@ -128,5 +68,105 @@
     "collectionName": "[+ +] - EP",
     "primaryGenreName": "K-Pop",
     "playlistID": "964c1f58-a9cd-463b-b7db-46cf88504933"
+  },
+  {
+    "trackId": 1336759483,
+    "trackName": "Heaven Knows",
+    "artistName": "The Hunts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c7/2d/e5/c72de517-44df-34a5-1234-4e5c2ce99b8b/888295680165.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/18/af/c7/18afc76e-8b78-1e65-39b5-512958936776/mzaf_2474870622378154211.plus.aac.p.m4a",
+    "collectionName": "Darlin' Oh Darlin’",
+    "primaryGenreName": "Alternative Folk",
+    "playlistID": "79b1006a-5a47-4ea1-baad-8a9184f9e34e"
+  },
+  {
+    "trackId": 1336759484,
+    "trackName": "Travel",
+    "artistName": "The Hunts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c7/2d/e5/c72de517-44df-34a5-1234-4e5c2ce99b8b/888295680165.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/33/ac/5b/33ac5b10-a5f5-af5e-4b66-9d910de7c566/mzaf_200026274493518782.plus.aac.p.m4a",
+    "collectionName": "Darlin' Oh Darlin’",
+    "primaryGenreName": "Alternative Folk",
+    "playlistID": "79b1006a-5a47-4ea1-baad-8a9184f9e34e"
+  },
+  {
+    "trackId": 1336759486,
+    "trackName": "Love of Mine",
+    "artistName": "The Hunts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c7/2d/e5/c72de517-44df-34a5-1234-4e5c2ce99b8b/888295680165.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/4b/c3/ff/4bc3ff7f-c6a7-b0de-5a0a-bdb9255614df/mzaf_1209445292301103764.plus.aac.p.m4a",
+    "collectionName": "Darlin' Oh Darlin’",
+    "primaryGenreName": "Alternative Folk",
+    "playlistID": "79b1006a-5a47-4ea1-baad-8a9184f9e34e"
+  },
+  {
+    "trackId": 1336759485,
+    "trackName": "Far",
+    "artistName": "The Hunts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c7/2d/e5/c72de517-44df-34a5-1234-4e5c2ce99b8b/888295680165.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/71/12/bf/7112bfd5-03e7-7477-36a6-5a0ec956987c/mzaf_5321752923838053489.plus.aac.p.m4a",
+    "collectionName": "Darlin' Oh Darlin’",
+    "primaryGenreName": "Alternative Folk",
+    "playlistID": "79b1006a-5a47-4ea1-baad-8a9184f9e34e"
+  },
+  {
+    "trackId": 1336759482,
+    "trackName": "Peace Be Still",
+    "artistName": "The Hunts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c7/2d/e5/c72de517-44df-34a5-1234-4e5c2ce99b8b/888295680165.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8f/86/63/8f8663fa-d5e0-be55-4f1e-b5d45b85bebf/mzaf_2849738449055956803.plus.aac.p.m4a",
+    "collectionName": "Darlin' Oh Darlin’",
+    "primaryGenreName": "Alternative Folk",
+    "playlistID": "79b1006a-5a47-4ea1-baad-8a9184f9e34e"
+  },
+  {
+    "trackId": 1336759280,
+    "trackName": "Darlin'",
+    "artistName": "The Hunts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c7/2d/e5/c72de517-44df-34a5-1234-4e5c2ce99b8b/888295680165.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e5/0a/2b/e50a2baa-e3d5-65c0-62eb-4af5e22334ce/mzaf_13759689109536369525.plus.aac.p.m4a",
+    "collectionName": "Darlin' Oh Darlin’",
+    "primaryGenreName": "Alternative Folk",
+    "playlistID": "79b1006a-5a47-4ea1-baad-8a9184f9e34e"
+  },
+  {
+    "trackId": 1336759488,
+    "trackName": "Flowers and Jars",
+    "artistName": "The Hunts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c7/2d/e5/c72de517-44df-34a5-1234-4e5c2ce99b8b/888295680165.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/77/39/f1/7739f10c-ca97-de69-dc28-649ead8366ab/mzaf_11300060914605395922.plus.aac.p.m4a",
+    "collectionName": "Darlin' Oh Darlin’",
+    "primaryGenreName": "Alternative Folk",
+    "playlistID": "79b1006a-5a47-4ea1-baad-8a9184f9e34e"
+  },
+  {
+    "trackId": 1777191876,
+    "trackName": "Dark Souls",
+    "artistName": "Motoi Sakuraba",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/59/6e/8a/596e8a23-7a27-39e5-76a4-c4ecbdcb1be5/PA00166469_0_205624_jacket.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/10/df/5d10df63-15f6-f613-bf59-84bd40bbe87e/mzaf_10271400005600897552.plus.aac.p.m4a",
+    "collectionName": "Dark Souls (Original Game Soundtrack)",
+    "primaryGenreName": "Soundtrack",
+    "playlistID": "a3f274a1-1d1c-4ffd-8212-c60e1f01ea4b"
+  },
+  {
+    "trackId": 1607018088,
+    "trackName": "Смысл жизни",
+    "artistName": "Dark Souls",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d6/ec/a1/d6eca10d-f3c3-0f68-0977-e82137efd6c8/cover.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/97/4e/fc/974efce5-71d5-2a6d-5c53-de4d07e3634c/mzaf_10829476316631736417.plus.aac.p.m4a",
+    "collectionName": "Раритеты 2000—2005",
+    "primaryGenreName": "Metal",
+    "playlistID": "a3f274a1-1d1c-4ffd-8212-c60e1f01ea4b"
+  },
+  {
+    "trackId": 1805774691,
+    "trackName": "Мы не хотим! (feat. The Dead Zone)",
+    "artistName": "Dark Souls",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/42/87/7c4287d9-24fc-1bc1-fb40-c3b405c5b8ca/0.jpg/100x100bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/42/9d/15429dc8-2a2f-88bd-eabb-32f199152562/mzaf_8357927579686561052.plus.aac.p.m4a",
+    "collectionName": "Мы не хотим! (feat. The Dead Zone) - Single",
+    "primaryGenreName": "Metal",
+    "playlistID": "a3f274a1-1d1c-4ffd-8212-c60e1f01ea4b"
   }
 ]
